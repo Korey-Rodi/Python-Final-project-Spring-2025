@@ -2,11 +2,11 @@
 
 ## What idea(s) do you have for your final project?
 
-Automated Whatsapp messenger that allows you to send messages at a certain time to a specified number.
+1. Automated Whatsapp messenger that allows you to send messages at a certain time to a specified number.
 
-Visual novel game that uses 8 bit horror elements
+2. Visual novel game that uses 8 bit horror elements
 
-media player
+3. Tkinter media player
 
 ## If you plan to collaborate with one or two classmates, what are their names?
 
