@@ -13,5 +13,5 @@
 N/A
 
 ## Do you have any questions of your own?
-How do I install libraries such as pygame or pywhatkit to Visual studio code?
-How do I use PIP install for python?
+1. How do I install libraries such as pygame or pywhatkit to Visual studio code?
+2. How do I use PIP install for python?
