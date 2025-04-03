@@ -1,2 +1,2 @@
-# Python-Final-project-Spring-2025
-Final project for CIS 1051
+# WhatsApp-Messenger-GUI
+Final project for CIS 1051 Spring 2025
