@@ -23,23 +23,23 @@ N/A
 
 ### In a sentence (or list of features), define a GOOD outcome for your final project. I.e., what WILL you accomplish no matter what?
 
--program that allows users to input the recipients number
--program that allows users to input the message they wish to send
--program that allows users to select the time the message will send
+program that allows users to input the recipients number
+program that allows users to input the message they wish to send
+program that allows users to select the time the message will send
 
 ### In a sentence (or list of features), define a BETTER outcome for your final project. I.e., what do you THINK you can accomplish before the final project's deadline?
 
--program that allows users to input the recipients number in the GUI
--program that allows users to input the message they wish to send in the GUI
--program that allows users to select the time the message will send in the GUI
+program that allows users to input the recipients number in the GUI
+program that allows users to input the message they wish to send in the GUI
+program that allows users to select the time the message will send in the GUI
 
 ### In a sentence (or list of features), define a BEST outcome for your final project. I.e., what do you HOPE to accomplish before the final project's deadline?
 
--program that allows users to input the recipients number in a well designed GUI
--program that allows users to input the message they wish to send in a well designed GUI
--program that allows users to select the time the message will send in a well designed GUI
--progam that allows users to attach files and or images to the message they send
--program can be accessed by users from anywhere such as anyone with access to the code
+program that allows users to input the recipients number in a well designed GUI
+program that allows users to input the message they wish to send in a well designed GUI
+program that allows users to select the time the message will send in a well designed GUI
+progam that allows users to attach files and or images to the message they send
+program can be accessed by users from anywhere such as anyone with access to the code
 
 ## In a paragraph or more, outline your next steps. What new skills will you need to acquire? What topics will you need to research? If working with one of two classmates, who will do what?
 
