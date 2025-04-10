@@ -3,6 +3,7 @@ import pywhatkit
 import tkinter
 # import regex to check phone numbers more effectively
 # import pynput to automate enter when chat doesnt send
+# import time to allow enough time to enter next window
 
 def checkNumberValid(phoneNumber):
     if len(phoneNumber) == 14:
@@ -28,7 +29,7 @@ def main():
     textMessage = input("enter your message: ")
     while checkMessage(textMessage) == False:
         textMessage = input("enter your message: ")
-    pywhatkit.sendwhatmsg_instantly(phoneNumber, textMessage,5)
+    pywhatkit.sendwhatmsg_instantly(phoneNumber, textMessage)
 
 
 if __name__ == "__main__":
