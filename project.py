@@ -1,7 +1,8 @@
 #imports
 import pywhatkit
-# add regex to check phone numbers more effectively
-import tkinter as tk
+import tkinter
+# import regex to check phone numbers more effectively
+# import pynput to automate enter when chat doesnt send
 
 def checkNumberValid(phoneNumber):
     if len(phoneNumber) == 14:
