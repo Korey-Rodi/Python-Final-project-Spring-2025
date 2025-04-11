@@ -1,6 +1,5 @@
-#imports
 import pywhatkit
-import tkinter
+import tkinter as tk
 # import regex to check phone numbers more effectively
 # import pynput to automate enter when chat doesnt send
 # import time to allow enough time to enter next window
@@ -22,6 +21,25 @@ def checkMessage(textMessage):
         return False
 
 def main():
+    root = tk.Tk()
+    root.title("WhatsApp Messenger GUI")
+    root.geometry("400x150")
+    root.resizable(False, False)
+    root.configure(bg="black")
+    phoneNumberPrompt = tk.Label(root, text="Enter Phone Number Below", width=400,background="black",font=("Lato",20))
+    phoneNumberPrompt.pack()
+    phoneNumberField = tk.Entry(root, width=400, background="white",font=("arial",16),foreground="black")
+    phoneNumberField.pack()
+    phoneNumberField.insert(0,"+1###-###-####")
+    textMessagePrompt = tk.Label(root, text="Enter Your Message Below", width=400,background="black",font=("Lato",20))
+    textMessagePrompt.pack()
+    textMessageField = tk.Entry(root, width=400, background="white",font=("arial",16),foreground="black")
+    textMessageField.pack()
+    textMessageField.insert(0,"Hello,John Doe!")
+    sendButton = tk.Button(root, text="Send",width=400)
+    sendButton.pack()
+    root.mainloop()
+    '''
     phoneNumber = input("Enter phone number +1###-###-####: ")
     while checkNumberValid(phoneNumber) == False:
         phoneNumber = input("Enter phone number +1###-###-####: ")
@@ -30,7 +48,7 @@ def main():
     while checkMessage(textMessage) == False:
         textMessage = input("enter your message: ")
     pywhatkit.sendwhatmsg_instantly(phoneNumber, textMessage)
-
+    '''
 
 if __name__ == "__main__":
     main()
