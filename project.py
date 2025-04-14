@@ -1,5 +1,6 @@
 import pywhatkit
 import tkinter as tk
+#import tkinter.filedialog
 import re
 
 def checkNumberValid(phoneNumber):
@@ -40,23 +41,23 @@ def sendingMessageandImage(phoneNumberFormat,testMessageFormat,imageFormat):
 def main():
     root = tk.Tk()
     root.title("WhatsApp Messenger GUI")
-    root.geometry("400x200")
+    root.geometry("400x160")
     root.resizable(False, False)
     root.configure(bg="black")
-    phoneNumberPrompt = tk.Label(root, text="Enter Phone Number Below", width=400,background="black",font=("Lato",20))
-    phoneNumberPrompt.pack()
-    phoneNumberField = tk.Entry(root, width=400, background="white",font=("arial",16),foreground="black",borderwidth=5)
-    phoneNumberField.pack()
+    phoneNumberPrompt = tk.Label(root, text="Enter Phone Number Below",background="black",font=("Lato",20))
+    phoneNumberPrompt.pack(fill="x")
+    phoneNumberField = tk.Entry(root, background="white",font=("arial",16),foreground="black",borderwidth=5)
+    phoneNumberField.pack(fill="x")
     phoneNumberField.insert(0,"+1###-###-####")
-    textMessagePrompt = tk.Label(root, text="Enter Your Message Below", width=400,background="black",font=("Lato",20))
-    textMessagePrompt.pack()
-    textMessageField = tk.Entry(root, width=400, background="white",font=("arial",16),foreground="black",borderwidth=5)
-    textMessageField.pack()
+    textMessagePrompt = tk.Label(root, text="Enter Your Message Below",background="black",font=("Lato",20))
+    textMessagePrompt.pack(fill="x")
+    textMessageField = tk.Entry(root, background="white",font=("arial",16),foreground="black",borderwidth=5)
+    textMessageField.pack(fill="x")
     textMessageField.insert(0,"Hello,John Doe!")
-    imagePrompt = tk.Label(root, text="Attach Image", width=400,background="black",font=("Lato",20))
-    imagePrompt.pack()
-    sendButton = tk.Button(root, text="Send",width=400,command=lambda: MyClick(phoneNumberField, textMessageField))
-    sendButton.pack()
+    #imagePrompt = tk.Label(root, text="Attach Image",background="black",font=("Lato",20))
+    #imagePrompt.pack(fill="x")
+    sendButton = tk.Button(root, text="Send",command=lambda: MyClick(phoneNumberField, textMessageField))
+    sendButton.pack(fill="x")
     root.mainloop()
 
 if __name__ == "__main__":
