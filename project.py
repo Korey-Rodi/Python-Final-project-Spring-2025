@@ -1,15 +1,15 @@
 import pywhatkit
 import tkinter as tk
-# import regex to check phone numbers more effectively
+import re
 
 def checkNumberValid(phoneNumber):
-    if len(phoneNumber) == 14:
-        #print("Valid Number")
+    pattern = r"\+\d{4}-\d{3}-\d{4}"
+    if re.fullmatch(pattern,phoneNumber):
+        #print(re.fullmatch)
         return True
     else:
-        #print("Invalid number or format. Please input a new number")
         return False
-
+    
 def checkMessage(textMessage):
     if len(textMessage) >= 1:
         #print("Valid Message")
@@ -32,6 +32,9 @@ def MyClick(phoneNumberField,textMessageField):
 
 def sendingMessage(phoneNumberFormat,textMessageFormat):
     pywhatkit.sendwhatmsg_instantly(phoneNumberFormat,textMessageFormat)
+
+def sendingMessageandImage(phoneNumberFormat,testMessageFormat,imageFormat):
+    pass
 
 
 def main():
