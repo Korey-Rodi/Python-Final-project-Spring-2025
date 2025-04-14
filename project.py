@@ -40,7 +40,7 @@ def sendingMessageandImage(phoneNumberFormat,testMessageFormat,imageFormat):
 def main():
     root = tk.Tk()
     root.title("WhatsApp Messenger GUI")
-    root.geometry("400x150")
+    root.geometry("400x200")
     root.resizable(False, False)
     root.configure(bg="black")
     phoneNumberPrompt = tk.Label(root, text="Enter Phone Number Below", width=400,background="black",font=("Lato",20))
@@ -53,6 +53,8 @@ def main():
     textMessageField = tk.Entry(root, width=400, background="white",font=("arial",16),foreground="black",borderwidth=5)
     textMessageField.pack()
     textMessageField.insert(0,"Hello,John Doe!")
+    imagePrompt = tk.Label(root, text="Attach Image", width=400,background="black",font=("Lato",20))
+    imagePrompt.pack()
     sendButton = tk.Button(root, text="Send",width=400,command=lambda: MyClick(phoneNumberField, textMessageField))
     sendButton.pack()
     root.mainloop()
