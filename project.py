@@ -42,21 +42,29 @@ def main():
     root = tk.Tk()
     root.title("WhatsApp Messenger GUI")
     root.geometry("400x160")
-    root.resizable(False, False)
+    root.resizable(True, False)
     root.configure(bg="black")
-    phoneNumberPrompt = tk.Label(root, text="Enter Phone Number Below",background="black",font=("Lato",20))
+    phoneNumberPrompt = tk.Label(root,text="Enter Phone Number Below",
+                                 background="black",font=("Lato",20))
     phoneNumberPrompt.pack(fill="x")
-    phoneNumberField = tk.Entry(root, background="white",font=("arial",16),foreground="black",borderwidth=5)
+    phoneNumberField = tk.Entry(root,background="white",
+                                font=("arial",16),
+                                foreground="black",borderwidth=5,
+                                justify="center")
     phoneNumberField.pack(fill="x")
     phoneNumberField.insert(0,"+1###-###-####")
-    textMessagePrompt = tk.Label(root, text="Enter Your Message Below",background="black",font=("Lato",20))
+    textMessagePrompt = tk.Label(root,text="Enter Your Message Below",
+                                 background="black",font=("Lato",20))
     textMessagePrompt.pack(fill="x")
-    textMessageField = tk.Entry(root, background="white",font=("arial",16),foreground="black",borderwidth=5)
+    textMessageField = tk.Entry(root,background="white",
+                                font=("arial",16),foreground="black",
+                                borderwidth=5)
     textMessageField.pack(fill="x")
     textMessageField.insert(0,"Hello,John Doe!")
-    #imagePrompt = tk.Label(root, text="Attach Image",background="black",font=("Lato",20))
+    #imagePrompt = tk.Label(root,text="Attach Image", background="black",font=("Lato",20))
     #imagePrompt.pack(fill="x")
-    sendButton = tk.Button(root, text="Send",command=lambda: MyClick(phoneNumberField, textMessageField))
+    sendButton = tk.Button(root, text="Send",
+                           command=lambda: MyClick(phoneNumberField, textMessageField))
     sendButton.pack(fill="x")
     root.mainloop()
 
