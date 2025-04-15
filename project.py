@@ -39,7 +39,7 @@ def sendingMessage(phoneNumberFormat,textMessageFormat):
 def main():
     root = tk.Tk()
     root.title("WhatsApp Messenger GUI")
-    root.geometry("400x200")
+    root.geometry("400x160")
     root.resizable(True, False)
     root.configure(bg="black")
     phoneNumberPrompt = tk.Label(root,text="Enter Phone Number Below",
