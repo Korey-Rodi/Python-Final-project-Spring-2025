@@ -30,18 +30,16 @@ def MyClick(phoneNumberField,textMessageField):
         textMessageField.insert(0,"Invalid Message and or Number")
         phoneNumberField.insert(0,"Invalid Message and or Number")
 
-
 def sendingMessage(phoneNumberFormat,textMessageFormat):
     pywhatkit.sendwhatmsg_instantly(phoneNumberFormat,textMessageFormat)
 
-def sendingMessageandImage(phoneNumberFormat,testMessageFormat,imageFormat):
-    pass
-
+#def sendingMessageandImage(phoneNumberFormat,testMessageFormat,imageFormat):
+#    pywhatkit.sendwhats_image(receiver: str, img_path: str, caption: str = "")
 
 def main():
     root = tk.Tk()
     root.title("WhatsApp Messenger GUI")
-    root.geometry("400x160")
+    root.geometry("400x200")
     root.resizable(True, False)
     root.configure(bg="black")
     phoneNumberPrompt = tk.Label(root,text="Enter Phone Number Below",
