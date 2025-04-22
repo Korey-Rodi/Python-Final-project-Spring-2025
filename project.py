@@ -65,7 +65,7 @@ def main():
                                 font=("arial",16),foreground="black",
                                 borderwidth=5, justify="center")
     imagePromptField.pack(fill="x")
-    imagePromptField.insert(0,"Enter File Directory")
+    imagePromptField.insert(0,"Enter File Directory (optional)")
     sendButton = tk.Button(root, text="Send",
                            command=lambda: MyClick(phoneNumberField, textMessageField))
     sendButton.pack(fill="x")
