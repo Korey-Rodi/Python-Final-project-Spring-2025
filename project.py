@@ -15,6 +15,7 @@ def checkMessage(textMessage):
         return True
     else:
         return False
+    
 def clearFields(phoneNumberField,textMessageField):
     phoneNumberField.delete(0,tk.END)
     textMessageField.delete(0,tk.END)
