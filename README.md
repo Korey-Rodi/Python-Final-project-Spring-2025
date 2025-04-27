@@ -1,5 +1,6 @@
 # WhatsApp-Messenger-GUI-Spring-2025
 Final project for CIS 1051
+![ApplicationIcon](https://github.com/user-attachments/assets/74bcd201-2588-4916-993a-e08a5e369493)
 
 
 
