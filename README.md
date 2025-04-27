@@ -24,3 +24,4 @@ If time permitted for this project I would hope to add some more features. One k
 * https://www.youtube.com/watch?v=S3AaSwpb5GE&t=319s
 * https://pypi.org/project/pywhatkit/
 * https://docs.python.org/3/library/tk.html
+* https://www.pygame.org/docs/ref/music.html
