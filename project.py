@@ -2,6 +2,19 @@ import pywhatkit
 import tkinter as tk
 from tkinter import messagebox
 import re
+import pygame
+
+def play_error_sound():
+    pygame.init()
+    pygame.mixer.init()
+    pygame.mixer.music.load("/Users/koreyrodi/Desktop/errorsound.wav")
+    pygame.mixer.music.play()
+
+def play_send_sound():
+    pygame.mixer.init()
+    pygame.mixer.music.load("/Users/koreyrodi/Desktop/sendingSound.mp3")
+    pygame.mixer.music.play()
+    pygame.mixer.music.play()
 
 def checkNumberValid(phoneNumber):
     pattern = r"\+\d{4}-\d{3}-\d{4}"
@@ -34,21 +47,25 @@ def MyClick(phoneNumberField,textMessageField):
         textMessageField.config(highlightbackground="#cc0606",highlightthickness=1)
         phoneNumberField.insert(0,"Invalid Number")
         textMessageField.insert(0,"Invalid Message")
+        play_error_sound()
         messagebox.showerror("Error", "Please make sure to input a valid Phone Number and Message")
     elif checkNumberValid(phoneNumber) == False:
         phoneNumberField.delete(0,tk.END)
         phoneNumberField.config(highlightbackground="#cc0606",highlightthickness=1)
         phoneNumberField.insert(0,"Invalid Number")
+        play_error_sound()
         messagebox.showerror("Error", "Please make sure to input valid Phone Number")
     elif checkMessage(textMessage) == False:
         textMessageField.delete(0,tk.END)
         textMessageField.config(highlightbackground="#cc0606",highlightthickness=1)
         textMessageField.insert(0,"Invalid Message")
+        play_error_sound()
         messagebox.showerror("Error", "Please make sure to input valid text message")
 
 def sendingMessage(phoneNumberFormat,textMessageFormat,phoneNumberField,textMessageField):
     phoneNumberField.config(highlightbackground="#146604",highlightthickness=3)
     textMessageField.config(highlightbackground="#146604",highlightthickness=3)
+    play_send_sound()
     pywhatkit.sendwhatmsg_instantly(phoneNumberFormat,textMessageFormat)
 
 def main():
