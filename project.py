@@ -24,14 +24,20 @@ def MyClick(phoneNumberField,textMessageField):
     textMessage = textMessageField.get()
     if checkNumberValid(phoneNumber) and checkMessage(textMessage) == True:
         sendingMessage(phoneNumber,textMessage)
-    if checkNumberValid(phoneNumber) == False:
+    elif checkNumberValid(phoneNumber) == False and checkMessage(textMessage) == False:
+        phoneNumberField.delete(0,tk.END)
+        textMessageField.delete(0,tk.END)
+        phoneNumberField.insert(0,"Invalid Number")
+        textMessageField.insert(0,"Invalid Message")
+        messagebox.showerror("Error", "Please make sure to input valid Phone Number and Message")
+    elif checkNumberValid(phoneNumber) == False:
         phoneNumberField.delete(0,tk.END)
         phoneNumberField.insert(0,"Invalid Number")
-        messagebox.showwarning("Warning", "Please make sure to input valid Phone Number")
-    if checkMessage(textMessage) == False:
+        messagebox.showerror("Error", "Please make sure to input valid Phone Number")
+    elif checkMessage(textMessage) == False:
         textMessageField.delete(0,tk.END)
         textMessageField.insert(0,"Invalid Message")
-        messagebox.showwarning("Warning", "Please make sure to input valid text message")
+        messagebox.showerror("Error", "Please make sure to input valid text message")
 
 def sendingMessage(phoneNumberFormat,textMessageFormat):
     pywhatkit.sendwhatmsg_instantly(phoneNumberFormat,textMessageFormat)
