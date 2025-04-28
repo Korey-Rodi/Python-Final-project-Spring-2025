@@ -14,7 +14,6 @@ def play_send_sound():
     pygame.mixer.init()
     pygame.mixer.music.load("/Users/koreyrodi/Desktop/sendingSound.mp3")
     pygame.mixer.music.play()
-    pygame.mixer.music.play()
 
 def checkNumberValid(phoneNumber):
     pattern = r"\+\d{4}-\d{3}-\d{4}"
