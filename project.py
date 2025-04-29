@@ -68,11 +68,11 @@ def sendingMessage(phoneNumberFormat,textMessageFormat,phoneNumberField,textMess
     pywhatkit.sendwhatmsg_instantly(phoneNumberFormat,textMessageFormat)
 
 def main():
-    messagebox.showinfo("information", "this is an extension of your whatsApp web account" \
+    messagebox.showinfo("information", "This is an extension of your whatsApp web account" \
     " please make sure you have an active account, and all input fields are correctly entered")
     root = tk.Tk()
     root.title("WhatsApp Messenger GUI")
-    root.geometry("400x180")
+    root.geometry("400x200")
     root.resizable(True, False)
     root.configure(bg="black")
     phoneNumberPrompt = tk.Label(root,text="Enter Phone Number Below",
