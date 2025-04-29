@@ -6,7 +6,7 @@ Final project for CIS 1051
 
 
 # Video Demo
-https://youtu.be/K5Zv6PJ4how
+https://youtu.be/WnI75s5RTn8
 
 # What is it?
 My project is an extension of the web version of WhatsApp that allows users to run the script through the built in mac app called automator. This makes it so users dont have to run the script in their IDE to use the program. Once users have the program booted it up it asks for two fields to be entered, one being the phone number which is checked with regex to make sure it follows proper US numbers and a text messsage field which is also checked to make sure that their is message that is greater than or equal to one character. There is also a clear all fields button that removes all text from the entry windows and removes the borders of red or green that come along with entering invalid or valid numbers and messages. There is also sounds that play when an erorr box is shown and a sending message sound effect that plays when the user hit the send button. After hitting send the program automatically opens whatsApp on the web where the message is already typed out and after a short time of waiting the message will send.
