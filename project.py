@@ -7,12 +7,12 @@ import pygame
 def play_error_sound():
     pygame.init()
     pygame.mixer.init()
-    pygame.mixer.music.load("/Users/koreyrodi/Desktop/errorsound.wav")
+    pygame.mixer.music.load("/Users/koreyrodi/Documents/GitHub/WhatsApp-Messenger-GUI/errorsound.wav")
     pygame.mixer.music.play()
 
 def play_send_sound():
     pygame.mixer.init()
-    pygame.mixer.music.load("/Users/koreyrodi/Desktop/sendingSound.mp3")
+    pygame.mixer.music.load("/Users/koreyrodi/Documents/GitHub/WhatsApp-Messenger-GUI/sendingSound.mp3")
     pygame.mixer.music.play()
 
 def checkNumberValid(phoneNumber):
